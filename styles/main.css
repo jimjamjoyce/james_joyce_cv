@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {font-family: 'Schibsted Grotesk';}
+
+a {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #8d00ed !important;
+    text-decoration: none;
+}
+
+ul {list-style-type: none;}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+#MainMenu {visibility: hidden;} */
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* COLOUR_CODES
+DARK PURPLE = 17052c
+NAVY = 162b69
+TURQUOISE = 00ded3
+BLUE = 2970ee
+PURPLE = 8d00ed
+GREY = e9e9e9
+*/

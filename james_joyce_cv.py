@@ -3,11 +3,10 @@
 
 import os
 import streamlit as st
-import streamlit.components.v1 as components
 
 # from st_files_connection import FilesConnection
-# import pandas as pd
-# import numpy as np
+import pandas as pd
+import numpy as np
 import base64
 
 # import gcsfs
@@ -16,10 +15,9 @@ import json
 from fractions import Fraction
 
 st.set_page_config(page_title="James Joyce CV",
-                   page_icon="🙋🏼‍♂️",
-                   initial_sidebar_state= "collapsed",
-                   layout = 'centered'
-                   )
+                   page_icon="📄",
+                   initial_sidebar_state="collapsed",
+                   layout = "centered")
 
 ##########################################
 ##  GLOBAL PARAMETERS                   ##
@@ -72,7 +70,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background(os.path.join(image_path,'base-background.jpg'))
+set_background(os.path.join(image_path,'changing-pastel2.gif'))
 
 # # Expander Styling
 st.markdown(
@@ -108,16 +106,16 @@ tab_hello, tab_cv, tab_coverletter, tab_personality = st.tabs(["**HELLO!**",
 with tab_hello:
     st.markdown(" #### Hello!")
     st.markdown('''<div style="text-align: justify;">
-    My name is James, welcome to my digital CV, thank you for taking the time to view my profile.
+    My name is James, welcome to my digital CV! Thank you for taking the time to view my profile.
     It's now incumbent upon me to reduce the full scope and scale of my own Human experience down
     to a series of palatable bullet points that make me seem a desirable candidate. A seemingly
-    daunting and bizarre endeavour as this is, its the game we find ourselves playing. I can assure
-    you that I have tried my utmost to make sure your time isn't wasted!
+    daunting and bizarre endeavour as this is, I can assure you that I have tried my utmost to
+    make sure your time isn't wasted.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
-    Along the top are all the core elements of my profile for an application. All are available to download
-    from the respective PDF viewer, so please feel free to do so should you require it.
+    Along the top in the tabs are all the core elements of my profile for an application. All
+    documents are available to download so please feel free should you require any of them.
     </div>''', unsafe_allow_html=True)
     ""
     # st.image('https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif',  use_column_width=True)
@@ -218,4 +216,120 @@ with tab_coverletter:
 ## PERSONALITY TAB                     ##
 #########################################
 with tab_personality:
-    st.markdown("XXX")
+    st.markdown('''<div style="text-align: justify;">
+    Nothing quite as rivetting as reading about someone else's personality test results is there? It's on par with dreams
+    and horoscopes. However hopefully you can see that I'm an extraverterd, intelligent, creative, albeit volatile individual
+    that gets on well in teams.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    This personality assessment and report is based on the Big Five Aspects Scale, the scientific model that describes
+    personality through the Five factors and each of their two aspects. The below results show where I stand in
+    comparison to others in the general population on the these traits and aspects as a percentile.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()
+    #### CREATING DATAFRAMES TO BE DISPLAYED ####
+    aggreableness_df = pd.DataFrame({"Dimension": ["Aggreableness", "Compassion", "Politeness"],
+                                    "Percentile": [94, 93, 89]})
+
+    conscientiousness_df = pd.DataFrame({"Dimension": ["Conscientiousness", "Industriousness", "Orderliness"],
+                                         "Percentile": [59, 32, 80]})
+
+    extraversion_df = pd.DataFrame({"Dimension": ["Extraversion", "Enthusiasm", "Assertiveness"],
+                                    "Percentile": [98, 95, 98]})
+
+    neuroticism_df = pd.DataFrame({"Dimension": ["Neuroticism", "Withdrawal", "Volatility"],
+                                   "Percentile": [64, 19, 93]})
+
+    openness_df = pd.DataFrame({"Dimension": ["Openness", "Intellect", "Aesthetics"],
+                                "Percentile": [87, 86, 80]})
+
+    #### 1. AGREEABLENESS SECTION ####
+    st.markdown("##### 1. AGREEABLENESS")
+    ""
+    col1, col2, = st.columns([0.3, 0.7])
+    with col1:
+        st.dataframe(aggreableness_df, hide_index=True)
+
+    with col2:
+        st.bar_chart(aggreableness_df, x = "Dimension", y = "Percentile", horizontal=True)
+
+    st.markdown('''<div style="text-align: justify;">
+    Agreeableness is the primary dimension of interpersonal interaction in the Big Five personality
+    trait scientific model. It is a very complex trait, with marked positive and negative elements all along
+    its distribution.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()
+
+
+    #### 2. CONSCIENTIOUSNESS SECTION ####
+    st.markdown("##### 2. CONSCIENTIOUSNESS")
+    ""
+    col1, col2, = st.columns([0.3, 0.7])
+    with col1:
+        st.dataframe(conscientiousness_df, hide_index=True)
+
+    with col2:
+        st.bar_chart(conscientiousness_df, x = "Dimension", y = "Percentile", horizontal=True)
+
+    st.markdown('''<div style="text-align: justify;">
+    Conscientiousness is the primary dimension of dutiful achievement in the Big Five personality trait scientific model.
+    It measures sense of obligation, attention to detail, hard work, persistence, cleanliness, effciency, as well as
+    adherence to rules, standards and processes.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()
+
+    #### 3. EXTRAVERSION SECTION ####
+    ""
+    st.markdown("##### 3. EXTRAVERSION")
+    col1, col2, = st.columns([0.3, 0.7])
+    with col1:
+        st.dataframe(extraversion_df, hide_index=True)
+
+    with col2:
+        st.bar_chart(extraversion_df, x = "Dimension", y = "Percentile", horizontal=True)
+
+    st.markdown('''<div style="text-align: justify;">
+    Extraversion is the primary dimension of positive emotion in the Big Five model. Extraversion is a measure of
+    general sensitivity to positive emotions such as hope, joy, anticipation and approach, particularly in social situations.
+    The two aspects of extraversion are enthusiasm and assertiveness.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()
+
+    #### 4. NEUROTICISM SECTION ####
+    ""
+    st.markdown("##### 4. NEUROTICISM")
+    col1, col2, = st.columns([0.3, 0.7])
+    with col1:
+        st.dataframe(neuroticism_df, hide_index=True)
+
+    with col2:
+        st.bar_chart(neuroticism_df, x = "Dimension", y = "Percentile", horizontal=True)
+
+    st.markdown('''<div style="text-align: justify;">
+    Neuroticism is the primary dimension of negative emotion in the Big Five personality model. Neuroticism is a measure of
+    general sensitivity to negative emotions such as pain, sadness, irritable or defensive anger, fear and anxiety.
+    The two aspects of neuroticism are withdrawal and volatility.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()
+
+    #### 5. OPENNESS ####
+    ""
+    st.markdown("##### 5. OPENNESS")
+    col1, col2, = st.columns([0.3, 0.7])
+    with col1:
+        st.dataframe(openness_df, hide_index=True)
+
+    with col2:
+        st.bar_chart(openness_df, x = "Dimension", y = "Percentile", horizontal=True)
+
+    st.markdown('''<div style="text-align: justify;">
+    Openness is the primary dimension of creativity, artistic interest and intelligence, particularly verbal. Openness is
+    a measure of interest in novelty, art, literature, abstract thinking, philosophy as well as sensitivity to aesthetic
+    emotions and beauty. The two aspects of openness are intellect and aesthetics.
+    </div>''', unsafe_allow_html=True)

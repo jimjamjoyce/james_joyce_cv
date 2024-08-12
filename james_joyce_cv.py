@@ -3,6 +3,7 @@
 
 import os
 import streamlit as st
+import streamlit.components.v1 as components
 
 # from st_files_connection import FilesConnection
 # import pandas as pd

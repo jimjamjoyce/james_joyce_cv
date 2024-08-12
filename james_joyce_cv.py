@@ -4,11 +4,12 @@
 import os
 import streamlit as st
 
+from markdownlit import mdlit
+
 # from st_files_connection import FilesConnection
 import pandas as pd
 import numpy as np
 import base64
-
 # import gcsfs
 import requests
 import json
@@ -193,19 +194,11 @@ with tab_hello:
 #########################################
 with tab_cv:
 
-    def displayPDF(file):
-    # Opening file from file path
-        with open(file, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-    # Embedding PDF in HTML
-        pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
-        width="700" height="1000" type="application/pdf"></iframe>'''
-
-    # Displaying File
-        st.markdown(pdf_display, unsafe_allow_html=True)
-
-    displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
+    cv = os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf')
+    st.download_button(label="Export CV",
+                       data=cv,
+                       file_name="James_Joyce_CV_24.pdf")
+    st.image(os.path.join(downloadfile_path, 'James_Joyce_CV_24.png'), use_column_width = True)
 
 
 #########################################
@@ -213,19 +206,12 @@ with tab_cv:
 #########################################
 with tab_coverletter:
 
-    def displayPDF(file):
-    # Opening file from file path
-        with open(file, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+    cover_letter = os.path.join(downloadfile_path, 'James_Joyce_Cover_Letter_24.pdf')
+    st.download_button(label="Export Covering Letter",
+                       data=cover_letter,
+                       file_name="James_Joyce_Cover_Letter_24.pdf")
+    st.image(os.path.join(downloadfile_path, 'James_Joyce_Cover_Letter_24.png'), use_column_width = True)
 
-    # Embedding PDF in HTML
-        pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
-        width="700" height="1000" type="application/pdf"></iframe>'''
-
-    # Displaying File
-        st.markdown(pdf_display, unsafe_allow_html=True)
-
-    displayPDF(os.path.join(downloadfile_path, 'James_Joyce_Cover_Letter_24.pdf'))
 
 
 #########################################

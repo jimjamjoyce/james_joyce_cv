@@ -193,23 +193,22 @@ with tab_hello:
 #########################################
 with tab_cv:
 
-    # def displayPDF(file):
-    # # Opening file from file path
-    #     with open(file, "rb") as f:
-    #         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+    def displayPDF(file):
+    # Opening file from file path
+        with open(file, "rb") as f:
+            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 
-    # # Embedding PDF in HTML
-    #     pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
-    #     width="700" height="1000" type="application/pdf"></iframe>'''
+    # Embedding PDF in HTML
+        pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
+        width="700" height="1000" type="application/pdf"></iframe>'''
 
-    # # Displaying File
-    #     st.markdown(pdf_display, unsafe_allow_html=True)
+    # Displaying File
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
-    # displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
+    displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
 
-  st.markdown("""
-    <embed src="https://github.com/jimjamjoyce/james_joyce_cv/main/download_files/James_Joyce_CV_24.pdf" width="800" height="800">
-    """, unsafe_allow_html=True)
+  # st.markdown("""<embed src="https://github.com/jimjamjoyce/james_joyce_cv/main/download_files/James_Joyce_CV_24.pdf" width="800" height="800">
+  #   """, unsafe_allow_html=True)
 
 
 #########################################

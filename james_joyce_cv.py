@@ -14,7 +14,7 @@ import requests
 import json
 from fractions import Fraction
 
-st.set_page_config(page_title="James Joyce",
+st.set_page_config(page_title="James Joyce CV",
                    page_icon="🙋🏼‍♂️",
                    initial_sidebar_state="expanded",
                    layout = 'wide'

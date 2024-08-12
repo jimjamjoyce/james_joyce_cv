@@ -207,9 +207,6 @@ with tab_cv:
 
     displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
 
-  # st.markdown("""<embed src="https://github.com/jimjamjoyce/james_joyce_cv/main/download_files/James_Joyce_CV_24.pdf" width="800" height="800">
-  #   """, unsafe_allow_html=True)
-
 
 #########################################
 ## COVERING LETTER TAB                 ##

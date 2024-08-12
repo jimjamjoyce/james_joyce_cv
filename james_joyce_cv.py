@@ -3,7 +3,7 @@
 
 import os
 import streamlit as st
-import pdf_viewer
+from from streamlit_pdf_viewer import pdf_viewer
 
 # from st_files_connection import FilesConnection
 import pandas as pd

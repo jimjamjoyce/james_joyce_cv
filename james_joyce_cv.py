@@ -7,7 +7,7 @@ import streamlit as st
 # from streamlit_extras.grid import grid
 # from streamlit_extras.add_vertical_space import add_vertical_space as avs
 
-from markdownlit import mdlit
+# from markdownlit import mdlit
 
 # from st_files_connection import FilesConnection
 import pandas as pd

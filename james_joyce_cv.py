@@ -3,16 +3,12 @@
 
 import os
 import streamlit as st
-# from streamlit_extras.row import row
-# from streamlit_extras.grid import grid
-# from streamlit_extras.add_vertical_space import add_vertical_space as avs
-
-# from markdownlit import mdlit
 
 # from st_files_connection import FilesConnection
 import pandas as pd
 import numpy as np
 import base64
+
 # import gcsfs
 import requests
 import json
@@ -236,16 +232,4 @@ with tab_coverletter:
 ## PERSONALITY TAB                     ##
 #########################################
 with tab_personality:
-    def displayPDF(file):
-    # Opening file from file path
-        with open(file, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-    # Embedding PDF in HTML
-        pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
-        width="700" height="1000" type="application/pdf"></iframe>'''
-
-    # Displaying File
-        st.markdown(pdf_display, unsafe_allow_html=True)
-
-    displayPDF(os.path.join(downloadfile_path, 'James_Joyce_Personality.pdf'))
+    st.markdown("XXX")

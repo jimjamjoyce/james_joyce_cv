@@ -5,8 +5,8 @@ import os
 import streamlit as st
 
 # from st_files_connection import FilesConnection
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 import base64
 
 # import gcsfs
@@ -16,7 +16,7 @@ from fractions import Fraction
 
 st.set_page_config(page_title="James Joyce CV",
                    page_icon="🙋🏼‍♂️",
-                   initial_sidebar_state="expanded",
+                   initial_sidebar_state= "collapsed",
                    layout = 'centered'
                    )
 

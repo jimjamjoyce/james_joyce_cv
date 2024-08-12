@@ -3,7 +3,6 @@
 
 import os
 import streamlit as st
-# from streamlit_pdf_viewer import pdf_viewer
 
 # from st_files_connection import FilesConnection
 import pandas as pd
@@ -209,7 +208,7 @@ with tab_cv:
     # displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
 
   st.markdown("""
-    <embed src="https://github.com/jimjamjoyce/james_joyce_cv/blob/main/download_files/James_Joyce_CV_24.pdf" width="800" height="800">
+    <embed src="https://github.com/jimjamjoyce/james_joyce_cv/main/download_files/James_Joyce_CV_24.pdf" width="800" height="800">
     """, unsafe_allow_html=True)
 
 

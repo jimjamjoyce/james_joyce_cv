@@ -3,6 +3,7 @@
 
 import os
 import streamlit as st
+from streamlit_pdf_viewer import pdf_viewer
 
 # from st_files_connection import FilesConnection
 import pandas as pd
@@ -193,19 +194,21 @@ with tab_hello:
 #########################################
 with tab_cv:
 
-    def displayPDF(file):
-    # Opening file from file path
-        with open(file, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+    # def displayPDF(file):
+    # # Opening file from file path
+    #     with open(file, "rb") as f:
+    #         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 
-    # Embedding PDF in HTML
-        pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
-        width="700" height="1000" type="application/pdf"></iframe>'''
+    # # Embedding PDF in HTML
+    #     pdf_display = F'''<iframe src="data:application/pdf;base64,{base64_pdf}"
+    #     width="700" height="1000" type="application/pdf"></iframe>'''
 
-    # Displaying File
-        st.markdown(pdf_display, unsafe_allow_html=True)
+    # # Displaying File
+    #     st.markdown(pdf_display, unsafe_allow_html=True)
 
-    displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
+    # displayPDF(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'))
+
+  pdf_viewer(os.path.join(downloadfile_path, 'James_Joyce_CV_24.pdf'), render_text=True)
 
 
 #########################################

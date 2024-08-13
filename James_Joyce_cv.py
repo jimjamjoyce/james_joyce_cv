@@ -93,16 +93,16 @@ st.image(os.path.join(image_path, 'JAMES-JOYCE-title.png'), use_column_width = T
 st.write('''##### <span style="color:white"><div style="text-align: center;">Come with us now on a journey through time and space
             ''', unsafe_allow_html=True)
 # st.image("https://i.gifer.com/NCqX.gif")
-tab_hello, tab_cv, tab_coverletter, tab_personality = st.tabs(["**HELLO!**",
+tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRODUCTION**",
                                                               "**CV**",
-                                                              "**COVERING LETTER**",
                                                               "**PERSONALITY**"
+                                                              "**CONTACT**",
                                                               ])
 
 #########################################
 ##             HELLO! TAB              ##
 #########################################
-with tab_hello:
+with tab_intro:
     st.markdown(" #### Hello!")
     st.markdown('''<div style="text-align: justify;">
     My name is James, welcome to my digital CV!
@@ -204,19 +204,6 @@ with tab_cv:
                        data=cv,
                        file_name="James_Joyce_CV_24.pdf")
     st.image(os.path.join(downloadfile_path, 'James_Joyce_CV_24.png'), use_column_width = True)
-
-
-#########################################
-## COVERING LETTER TAB                 ##
-#########################################
-with tab_coverletter:
-
-    cover_letter = os.path.join(downloadfile_path, 'James_Joyce_Cover_Letter_24.pdf')
-    st.download_button(label="Export Covering Letter",
-                       data=cover_letter,
-                       file_name="James_Joyce_Cover_Letter_24.pdf")
-    st.image(os.path.join(downloadfile_path, 'James_Joyce_Cover_Letter_24.png'), use_column_width = True)
-
 
 
 #########################################
@@ -351,6 +338,17 @@ with tab_personality:
     with col2:
         st.bar_chart(openness_df, x = "Dimension", y = "Percentile", horizontal=True)
 
+    st.markdown('''<div style="text-align: justify;">
+    Openness is the primary dimension of creativity, artistic interest and intelligence, particularly verbal. Openness is
+    a measure of interest in novelty, art, literature, abstract thinking, philosophy as well as sensitivity to aesthetic
+    emotions and beauty. The two aspects of openness are intellect and aesthetics.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()
+#########################################
+## CONTACT TAB                         ##
+#########################################
+with tab_contact:
     st.markdown('''<div style="text-align: justify;">
     Openness is the primary dimension of creativity, artistic interest and intelligence, particularly verbal. Openness is
     a measure of interest in novelty, art, literature, abstract thinking, philosophy as well as sensitivity to aesthetic

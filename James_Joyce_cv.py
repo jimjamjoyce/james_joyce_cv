@@ -361,7 +361,6 @@ with tab_contact:
     EMAIL: jimjoywork@live.com
     </div>''', unsafe_allow_html=True)
     ""
-    ""
     st.markdown('''<div style="text-align: justify;">
     PHONE: +44 7535 358 691
     </div>''', unsafe_allow_html=True)

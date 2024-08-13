@@ -88,14 +88,11 @@ st.markdown(
 ##########################################
 
 st.image(os.path.join(image_path, 'JAMES-JOYCE-title.png'), use_column_width = True)
-st.write('''##### <span style="color:white"><div style="text-align: center;">Come with us now on a journey through time and space
-            ''', unsafe_allow_html=True)
-# st.image("https://i.gifer.com/NCqX.gif")
-tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRODUCTION**",
-                                                              "**CV**",
-                                                              "**PERSONALITY**",
-                                                              "**CONTACT**",
-                                                              ])
+tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRO**",
+                                                           "**CV**",
+                                                           "**PERSONALITY**",
+                                                           "**CONTACT**",
+                                                           ])
 
 #########################################
 ##             HELLO! TAB              ##
@@ -103,8 +100,11 @@ tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRODUCTION**",
 with tab_intro:
     st.markdown(" #### Hello!")
     st.markdown('''<div style="text-align: justify;">
-    My name is James, welcome to my digital CV! Python-coded by yours truly (with smatterings of CSS styling here and there), and
-    brought to life through the medium of Streamlit.
+    My name is James, welcome to my digital CV!
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    Python-coded by yours truly (with smatterings of CSS styling here and there), and brought to life through the medium of Streamlit.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">

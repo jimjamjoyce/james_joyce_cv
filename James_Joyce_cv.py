@@ -12,8 +12,6 @@ import base64
 # import gcsfs
 import requests
 import json
-from fractions import Fraction
-import matplotlib as plt
 
 st.set_page_config(page_title="James Joyce CV",
                    page_icon="📄",

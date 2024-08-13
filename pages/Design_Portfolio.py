@@ -112,11 +112,10 @@ that will download a .zip file with my most notable work.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
-I have essnetially grouped everything together by project in respective folders. the 'dabbers' folder contains a whole host of
+I have essnetially grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
 various works from the past 3 years.
 </div>''', unsafe_allow_html=True)
 ""
-
 st.markdown('''<div style="text-align: justify;">
 If you have any questions about any of the work, please feel free to get in contact; my information can be found in the "Contact"
 tab on my CV Page.
@@ -143,6 +142,6 @@ with col2:
       btn = st.download_button(
           label="Export Portfolio PDFs",
           data=fp,
-          file_name="JAMES_JOYCE_portfolio_pdfs.zip",
+          file_name="JAMES_JOYCE_Portfolio_pdfs.zip",
           mime="application/zip"
       )

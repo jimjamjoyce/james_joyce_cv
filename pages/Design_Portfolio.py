@@ -9,7 +9,7 @@ import json
 
 st.set_page_config(page_title="Design Portfolio",
                    page_icon="🎨",
-                   initial_sidebar_state="collapsed",
+                   initial_sidebar_state="expanded",
                    layout = 'centered'
                    )
 

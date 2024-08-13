@@ -366,5 +366,6 @@ with tab_contact:
     PHONE: +44 7535 358 691
     </div>''', unsafe_allow_html=True)
     ""
-    st.link("https://www.linkedin.com/in/jj-james-joyce/", label="LinkedIn")
+    st.page_link("http://www.google.com", label="Google", icon="🌎")
+    st.link("http://www.linkedin.com/in/jj-james-joyce", label="LinkedIn")
     st.link_button("Get in touch", "mailto:jimjoywork@live.com", type = "primary")

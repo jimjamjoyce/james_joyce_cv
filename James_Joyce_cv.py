@@ -95,7 +95,7 @@ st.write('''##### <span style="color:white"><div style="text-align: center;">Com
 # st.image("https://i.gifer.com/NCqX.gif")
 tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRODUCTION**",
                                                               "**CV**",
-                                                              "**PERSONALITY**"
+                                                              "**PERSONALITY**",
                                                               "**CONTACT**",
                                                               ])
 

@@ -366,7 +366,7 @@ with tab_contact:
     PHONE: +44 7535 358 691
     </div>''', unsafe_allow_html=True)
     ""
-    st.write(f"LINKEDIN: {linkedin_link}")
+    f"LINKEDIN: {linkedin_link}"
     ""
     st.page_link("http://www.linkedin.com/in/jj-james-joyce", label="🔗 LinkedIn")
     ""

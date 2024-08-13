@@ -107,13 +107,13 @@ interactive images, widget, you name it, so watch this space 👀.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
-Alas, all is not lost. Instead I'll provide you with my portfoliio in its entirety through the medium of the 'Export' button below
-that will download a .zip file with my most notable work.
+Alas, I'll just have to provide you with my portfolio in its entirety through the medium of the 'Export' buttons below.
+The two buttons contain different .zip files with different work in them, so make sure you have a look through both of them!
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
 I have essnetially grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
-various works from the past 3 years.
+various works from the past 3 years, and the rest have been projects that I've been involved with as a freelancer.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">

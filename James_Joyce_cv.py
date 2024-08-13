@@ -17,7 +17,7 @@ import json
 
 st.set_page_config(page_title="James Joyce CV",
                    page_icon="📄",
-                   initial_sidebar_state="collapsed",
+                   initial_sidebar_state="expanded",
                    layout = "centered")
 
 image_path = os.path.join(os.getcwd(), 'media')

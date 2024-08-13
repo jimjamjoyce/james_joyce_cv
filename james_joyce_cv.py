@@ -13,6 +13,7 @@ import base64
 import requests
 import json
 from fractions import Fraction
+import matplotlib as plt
 
 st.set_page_config(page_title="James Joyce CV",
                    page_icon="📄",
@@ -106,19 +107,25 @@ tab_hello, tab_cv, tab_coverletter, tab_personality = st.tabs(["**HELLO!**",
 with tab_hello:
     st.markdown(" #### Hello!")
     st.markdown('''<div style="text-align: justify;">
-    My name is James, welcome to my digital CV! Thank you for taking the time to view my profile.
-    It's now incumbent upon me to reduce the full scope and scale of my own Human experience down
-    to a series of palatable bullet points that make me seem a desirable candidate. A seemingly
-    daunting and bizarre endeavour as this is, I can assure you that I have tried my utmost to
-    make sure your time isn't wasted.
+    My name is James, welcome to my digital CV!
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    Thank you for taking the time to view this carefully curated profile.
+    It's now incumbent upon me to reduce the full scope of my experience down to a few palatable bullet points that
+    convince you I'm a desirable and employable prospect.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    As seemingly daunting and bizarre an endeavour as this is, I can assure you that I have tried my utmost to make
+    sure your time isn't wasted, and that your experience is both smooth and enlightening.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
     Along the top in the tabs are all the core elements of my profile for an application. All
-    documents are available to download so please feel free should you require any of them.
+    documents are available to download via the 'Export' buttons, so please feel free should you require any of them.
     </div>''', unsafe_allow_html=True)
     ""
-    # st.image('https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif',  use_column_width=True)
     col1, col2, col3 = st.columns([1,1,1])
     st.markdown(" ##### Past")
     st.markdown('''<div style="text-align: justify;">
@@ -129,8 +136,8 @@ with tab_hello:
     ""
     st.markdown('''<div style="text-align: justify;">
     My progression culminated as Production & Projects Manager at Dabbers Social Bingo. I feel like the
-    whimsiscal nature of Bingo often prejudiced people as to the seriousness the role demanded; the most
-    common follow-up question by far was "So do you call the numbers?". If by "calling the numbers" you mean:
+    whimsiscal nature of Bingo often prejudiced people as to the seriousness the role demanded, where my main
+    achievements and responsibilities were: the most.
     </div>''', unsafe_allow_html=True)
     ""
     #
@@ -144,10 +151,12 @@ with tab_hello:
     st.markdown("- 🚙 Driving and delivering our external shows all over the country.")
     st.markdown("- 🌟 Dressing the venue for seasonal periods (Christmas, Halloween, Valentines Day etc.).")
     st.markdown("- 🛠 Making props for our shows to increase production value and enhance customer experience.")
-
+    ""
     st.markdown('''<div style="text-align: justify;">
-    Then yes, I "called the numbers"... Although it's a lot easier and more succinct to off the simple reply of "no" within the
-    confines of idle chit-chat.
+    The most common follow-up question, upon being asked what I do, by far was "So, do you call the numbers?". In an ideal world,
+    I'd reel off the above list above so that my inquisitor would know that it's not all fun and games. Alas in the real world,
+    and within the confines of idle chit-chat it's much quicker and easier to respond with a simple "No, I just book Drag Queens
+    and stuff."
     </div>''', unsafe_allow_html=True)
     ""
     # CSS to indent list:
@@ -174,7 +183,7 @@ with tab_hello:
     My main duties include:
     </div>''', unsafe_allow_html=True)
     ""
-    st.markdown("- ⏲ Preparing bar for service - beer line clean, arrange bar displays, configure tills for staff to use.")
+    st.markdown("- ⏲ Preparing bar for service - line clean, arrange bar displays, configure tills for staff to use.")
     st.markdown("- ✅ To brief and be responsible for all personel working on my bar.")
     st.markdown("- 🧮 Stock Management throughout the event.")
     st.markdown("- 👮‍♂️ Managing and enforcing the legalities of bar operation under my own Personal Alcohol License.")
@@ -217,15 +226,31 @@ with tab_coverletter:
 #########################################
 with tab_personality:
     st.markdown('''<div style="text-align: justify;">
-    Nothing quite as rivetting as reading about someone else's personality test results is there? It's on par with dreams
-    and horoscopes. However hopefully you can see that I'm an extraverterd, intelligent, creative, albeit volatile individual
-    that gets on well in teams.
+    Nothing quite as rivetting as reading about someone else's personality test results is there? It's on par with listening
+    to other people's dreams and horoscopes.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
-    This personality assessment and report is based on the Big Five Aspects Scale, the scientific model that describes
-    personality through the Five factors and each of their two aspects. The below results show where I stand in
-    comparison to others in the general population on the these traits and aspects as a percentile.
+    But all jokes aside, these are NOT the results of some Buzzfeed "which type of naan bread are you?"
+    style quiz. This personality assessment is based on the Big Five Aspects Scale, a scientific multi-dimensional standard
+    recognised across the field across psychology, with each of the Big Five Aspects being made up of two sub-aspects,
+    which are also detailed below.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    The below results show where I stand in comparison to others in the general population as a percentile. For example
+    I scored 98 in Extraversion (humble brag 💅🏼). This means that in a room of 100 people, there would only be 1 person
+    more extraverted than me.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    In brirf summary I'm an extremely extraverted, intelligent, and creative team-player (that you should definitely hire into your
+    team 😁), whose shortcomings lie predominantly in emotional volatility and industriousness. But you can't have it all can you?
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    This assessment really helped me to understand myself better in terms of playing to my strengths and being aware in the areas I
+    am lacking in.
     </div>''', unsafe_allow_html=True)
     ""
     st.divider()
@@ -333,3 +358,5 @@ with tab_personality:
     a measure of interest in novelty, art, literature, abstract thinking, philosophy as well as sensitivity to aesthetic
     emotions and beauty. The two aspects of openness are intellect and aesthetics.
     </div>''', unsafe_allow_html=True)
+    ""
+    st.divider()

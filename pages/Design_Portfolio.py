@@ -127,11 +127,22 @@ Happy perusing!
 </div>''', unsafe_allow_html=True)
 ""
 ""
-design_portfolio = os.path.join(downloadfile_path, 'JAMES_JOYCE_Design_Portfolio.zip')
-with open(design_portfolio, "rb") as fp:
-    btn = st.download_button(
-        label="Export Portfolio",
-        data=fp,
-        file_name="JAMES_JOYCE_Design_Portfolio.zip",
-        mime="application/zip"
-    )
+col1, col2, col3 = st.columns([1,1,1])
+with col1:
+  design_portfolio = os.path.join(downloadfile_path, 'JAMES_JOYCE_Design_Portfolio.zip')
+  with open(design_portfolio, "rb") as fp:
+      btn = st.download_button(
+          label="Export Portfolio",
+          data=fp,
+          file_name="JAMES_JOYCE_Design_Portfolio.zip",
+          mime="application/zip"
+      )
+with col2:
+  portfolio_pdf = os.path.join(downloadfile_path, 'portfolio_pdfs.zip')
+  with open(portfolio_pdf, "rb") as fp:
+      btn = st.download_button(
+          label="Export Portfolio PDFs",
+          data=fp,
+          file_name="JAMES_JOYCE_portfolio_pdfs.zip",
+          mime="application/zip"
+      )

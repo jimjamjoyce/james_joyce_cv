@@ -353,7 +353,10 @@ with tab_personality:
 with tab_contact:
     st.markdown('''<div style="text-align: justify;">
     EMAIL: jimjoywork@live.com
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
     PHONE: +447535 358 691
     </div>''', unsafe_allow_html=True)
     ""
-    st.link_button("Email Me", "mailto:jimjoywork@live.com")
+    st.link_button("Email Me", "mailto:jimjoywork@live.com", type = "primary")

@@ -357,7 +357,10 @@ with tab_personality:
 ## CONTACT TAB                         ##
 #########################################
 with tab_contact:
-    linkedin_link = st.page_link("http://www.linkedin.com/in/jj-james-joyce", label="🔗 LinkedIn")
+    st.markdown('''<div style="text-align: justify;">
+    I'll be happy to answer any questions you may have. Please feel free to use the information below should you wish to contact me.
+    </div>''', unsafe_allow_html=True)
+    ""
     st.markdown('''<div style="text-align: justify;">
     EMAIL: jimjoywork@live.com
     </div>''', unsafe_allow_html=True)

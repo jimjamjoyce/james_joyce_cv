@@ -361,8 +361,10 @@ with tab_contact:
     EMAIL: jimjoywork@live.com
     </div>''', unsafe_allow_html=True)
     ""
+    ""
     st.markdown('''<div style="text-align: justify;">
     PHONE: +44 7535 358 691
     </div>''', unsafe_allow_html=True)
     ""
+    st.link(("https://www.linkedin.com/in/jj-james-joyce/", label="LinkedIn")
     st.link_button("Get in touch", "mailto:jimjoywork@live.com", type = "primary")

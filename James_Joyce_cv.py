@@ -103,13 +103,13 @@ tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRODUCTION**",
 with tab_intro:
     st.markdown(" #### Hello!")
     st.markdown('''<div style="text-align: justify;">
-    My name is James, welcome to my digital CV!
+    My name is James, welcome to my digital CV! Python-coded by yours truly (with smatterings of CSS styling here and there), and
+    brought to life through the medium of Streamlit.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
-    Thank you for taking the time to view this carefully curated profile.
-    It's now incumbent upon me to reduce the full scope of my experience down to a few palatable bullet points that
-    convince you I'm a desirable and employable prospect.
+    It's now incumbent upon me to reduce the full scope of 8+ years of experience down to a few palatable bullet points,
+    demonstrating my diverse range of expertise across hospitality, entertainment and most recently data analytics and coding.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
@@ -120,6 +120,7 @@ with tab_intro:
     st.markdown('''<div style="text-align: justify;">
     Along the top in the tabs are all the core elements of my profile for an application. All
     documents are available to download via the 'Export' buttons, so please feel free should you require any of them.
+    If you have any questions, my contact details are available on the 'Contact' tab above.
     </div>''', unsafe_allow_html=True)
     ""
     col1, col2, col3 = st.columns([1,1,1])
@@ -140,7 +141,7 @@ with tab_intro:
     st.markdown("- 📝 Project Managing the £250k roll out of a second venue within an 8-week turnaround time.")
     st.markdown("- 📆 Managing and booking talent for over 100 slots each month.")
     st.markdown("- 💰 Monthly reconciliation of the Production department expenditure and budget.")
-    st.markdown("- 🎪 Liaising with festivals and third parties on external events to ensure seemless delivery of shows.")
+    st.markdown("- 🎪 Liaising with festivals and third parties on external events to ensure seamless delivery of shows.")
     st.markdown('''- 🎨 Graphic Design - creating digital assets for social channels / website as well as physical collateral
                 in the form of food & drink menus, venue posters, promo flyers, venue artwork.''')
     st.markdown("- 👁 Designing and creating visual content to supplement the shows on PowerPoint and iMovie")
@@ -172,7 +173,7 @@ with tab_intro:
     st.markdown('''<div style="text-align: justify;">
     I also provide Bar Operations and Management expertise to Columbia Events, a start-up bar company that provides white-label
     bar operations services to a multiude of Events, most notably Formula 1, Moto GP, Cambridge Folk Festival, Pub in the Park,
-    and Field Maneuvres.
+    and Field Maneuvers Festival.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
@@ -180,14 +181,21 @@ with tab_intro:
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown("- ⏲ Preparing bar for service - line clean, arrange bar displays, configure tills for staff to use.")
-    st.markdown("- ✅ To brief and be responsible for all personel working on my bar.")
+    st.markdown("- ✅ To brief and be responsible for all personnel working on my bar.")
     st.markdown("- 🧮 Stock Management throughout the event.")
     st.markdown("- 👮‍♂️ Managing and enforcing the legalities of bar operation under my own Personal Alcohol License.")
     st.markdown("- 🛠 Technical maintenance of the bar (changing kegs & gas cylinders, quality control of beer pours).")
 
     st.markdown(" ##### Future")
     st.markdown('''<div style="text-align: justify;">
-    XXX
+    The main thing I have learned about what excites me in my career is the idea of visual storytelling. Whether it's through
+    design, spreadsheets and data, dashboards, or even cold hard copywriting, I feel I am best placed in positions where a visual explanation
+    is needed in order to help a team or group understand something.
+    </div>''', unsafe_allow_html=True)
+    ""
+    st.markdown('''<div style="text-align: justify;">
+    I hope to be part of a team where storytelling is at the heart of the group endeavour, and I feel I have the skills and
+    experience, albeit unorthodox and unusual, to do just that.
     </div>''', unsafe_allow_html=True)
     ""
 

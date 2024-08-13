@@ -131,9 +131,9 @@ with col1:
   design_portfolio = os.path.join(downloadfile_path, 'JAMES_JOYCE_Design_Portfolio.zip')
   with open(design_portfolio, "rb") as fp:
       btn = st.download_button(
-          label="Export Portfolio",
+          label="Export Portfolio PNGs",
           data=fp,
-          file_name="JAMES_JOYCE_Design_Portfolio.zip",
+          file_name="JAMES_JOYCE_Portfolio_pngs.zip",
           mime="application/zip"
       )
 with col2:

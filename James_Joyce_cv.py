@@ -124,7 +124,7 @@ with tab_intro:
     </div>''', unsafe_allow_html=True)
     ""
     col1, col2, col3 = st.columns([1,1,1])
-    st.markdown(" ##### Past")
+    st.markdown(" ##### PAST")
     st.markdown('''<div style="text-align: justify;">
     Up until last year, my career has been within the Events and Hospitality sectors. This varied and dynamic
     industry has inculcated in me a host of soft skills, most notably Teamwork, Communication, Dilligence,
@@ -163,7 +163,7 @@ with tab_intro:
     ''', unsafe_allow_html=True)
     #
     ""
-    st.markdown(" ##### Present")
+    st.markdown(" ##### PRESENT")
     st.markdown('''<div style="text-align: justify;">
     Currently I am living the lavish existence of a multi-faceted freelancer. Although I left Dabbers permanently in June 2023,
     I have since continued to provide ad-hoc Graphic Design (see portfolio tab) and Event Management services when their show is
@@ -186,7 +186,7 @@ with tab_intro:
     st.markdown("- 👮‍♂️ Managing and enforcing the legalities of bar operation under my own Personal Alcohol License.")
     st.markdown("- 🛠 Technical maintenance of the bar (changing kegs & gas cylinders, quality control of beer pours).")
 
-    st.markdown(" ##### Future")
+    st.markdown(" ##### FUTURE")
     st.markdown('''<div style="text-align: justify;">
     The main thing I have learned about what excites me in my career is the idea of visual storytelling. Whether it's through
     design, spreadsheets and data, dashboards, or even cold hard copywriting, I feel I am best placed in positions where a visual explanation

@@ -235,7 +235,7 @@ with tab_personality:
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">
-    In brirf summary I'm an extremely extraverted, intelligent, and creative team-player (that you should definitely hire into your
+    In brief summary I'm an extremely extraverted, intelligent, and creative team-player (that you should definitely hire into your
     team 😁), whose shortcomings lie predominantly in emotional volatility and industriousness. But you can't have it all can you?
     </div>''', unsafe_allow_html=True)
     ""

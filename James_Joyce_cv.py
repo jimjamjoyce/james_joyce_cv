@@ -368,6 +368,6 @@ with tab_contact:
     ""
     f"LINKEDIN: {linkedin_link}"
     ""
-    st.page_link("http://www.linkedin.com/in/jj-james-joyce", label="🔗 LinkedIn")
+    st.link_button("LinkedIn, "http://www.linkedin.com/in/jj-james-joyce", type = "primary")
     ""
     st.link_button("Get in touch", "mailto:jimjoywork@live.com", type = "primary")

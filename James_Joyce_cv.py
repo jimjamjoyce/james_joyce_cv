@@ -359,4 +359,4 @@ with tab_contact:
     PHONE: +447535 358 691
     </div>''', unsafe_allow_html=True)
     ""
-    st.link_button("Get in touch", "mailto:jimjoywork@live.com", type = "secondary")
+    st.link_button("Get in touch", "mailto:jimjoywork@live.com", type = "primary")

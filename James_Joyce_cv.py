@@ -95,12 +95,12 @@ tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(["**INTRO**",
                                                            ])
 
 #########################################
-##             HELLO! TAB              ##
+##             INTRO TAB               ##
 #########################################
 with tab_intro:
-    st.markdown(" #### Hello!")
+    st.markdown(" #### INTRODUCTION")
     st.markdown('''<div style="text-align: justify;">
-    My name is James, welcome to my digital CV!
+    Hello, my name is James and welcome to my digital CV!
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">

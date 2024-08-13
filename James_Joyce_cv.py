@@ -1,26 +1,24 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+#### IMPORTS ####
 import os
 import streamlit as st
-
-# from st_files_connection import FilesConnection
 import pandas as pd
 import numpy as np
 import base64
-
-# import gcsfs
 import requests
 import json
+
+
+##########################################
+##  GLOBAL PARAMETERS                   ##
+##########################################
 
 st.set_page_config(page_title="James Joyce CV",
                    page_icon="📄",
                    initial_sidebar_state="collapsed",
                    layout = "centered")
-
-##########################################
-##  GLOBAL PARAMETERS                   ##
-##########################################
 
 image_path = os.path.join(os.getcwd(), 'media')
 downloadfile_path = os.path.join(os.getcwd(), 'download_files')

@@ -213,7 +213,7 @@ with tab_cv:
 
 
 #########################################
-## PERSONALITY TAB                     ##
+##          PERSONALITY TAB            ##
 #########################################
 with tab_personality:
     st.markdown('''<div style="text-align: justify;">
@@ -354,11 +354,11 @@ with tab_personality:
 
 
 #########################################
-## CONTACT TAB                         ##
+##              CONTACT TAB            ##
 #########################################
 with tab_contact:
     st.markdown('''<div style="text-align: justify;">
-    I'll be happy to answer any questions you may have. Please feel free to use the information below should you wish to contact me.
+    I'll be happy to answer any questions you may have, so please feel free to use the information below should you wish to contact me.
     </div>''', unsafe_allow_html=True)
     ""
     st.markdown('''<div style="text-align: justify;">

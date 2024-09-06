@@ -107,7 +107,7 @@ Google Drive, (link located below).
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
-I have essentially grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
+I have grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
 various works from the past 3 years, and the rest have been projects that I've been involved with as a freelancer.
 </div>''', unsafe_allow_html=True)
 ""

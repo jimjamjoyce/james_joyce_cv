@@ -1,11 +1,6 @@
 import os
 import streamlit as st
-import streamlit.components.v1 as components
-import pandas as pd
-import numpy as np
 import base64
-import requests
-import json
 
 st.set_page_config(page_title="Design Portfolio",
                    page_icon="🎨",
@@ -107,13 +102,15 @@ interactive images, widget, you name it, so watch this space 👀.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
-Alas, I'll just have to provide you with my portfolio in its entirety through the medium of the 'Export' buttons below.
-The two buttons contain different .zip files with different work in them, so make sure you have a look through both of them!
+Alas, I'll just have to provide you with my portfolio in its entirety through the medium of
+Google Drive, (link located below).
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
-I have essnetially grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
+I have essentially grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
 various works from the past 3 years, and the rest have been projects that I've been involved with as a freelancer.
+some descriptions of the work I've done are located back in my online CV section, however if you require more
+information on anything in my portfolio please don't hesitate to get in touch.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
@@ -126,22 +123,7 @@ Happy perusing!
 </div>''', unsafe_allow_html=True)
 ""
 ""
-col1, col2, col3 = st.columns([1,1,1])
-with col1:
-  design_portfolio = os.path.join(downloadfile_path, 'JAMES_JOYCE_Design_Portfolio.zip')
-  with open(design_portfolio, "rb") as fp:
-      btn = st.download_button(
-          label="Export Portfolio PNGs",
-          data=fp,
-          file_name="JAMES_JOYCE_Portfolio_pngs.zip",
-          mime="application/zip"
-      )
-with col2:
-  portfolio_pdf = os.path.join(downloadfile_path, 'portfolio_pdfs.zip')
-  with open(portfolio_pdf, "rb") as fp:
-      btn = st.download_button(
-          label="Export Portfolio PDFs",
-          data=fp,
-          file_name="JAMES_JOYCE_Portfolio_pdfs.zip",
-          mime="application/zip"
-      )
+
+st.link_button(label="🔗 G-Drive Portfolio",
+               url="https://drive.google.com/drive/folders/1-1qPprFRgxlBexbKphqp4pNSfbYpOOEI?usp=sharing",
+               type='primary')

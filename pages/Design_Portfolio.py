@@ -109,13 +109,11 @@ Google Drive, (link located below).
 st.markdown('''<div style="text-align: justify;">
 I have essentially grouped everything together by project in respective folders. The 'dabbers' folder contains a whole host of
 various works from the past 3 years, and the rest have been projects that I've been involved with as a freelancer.
-some descriptions of the work I've done are located back in my online CV section, however if you require more
-information on anything in my portfolio please don't hesitate to get in touch.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">
-If you have any questions about any of the work, please feel free to get in contact; my information can be found in the "Contact"
-tab on my CV Page.
+Some descriptions of the work I've done are located back in my online CV section, however if you require more
+information on anything in my portfolio please don't hesitate to get in touch via the "Contact" tab on my CV Page.
 </div>''', unsafe_allow_html=True)
 ""
 st.markdown('''<div style="text-align: justify;">

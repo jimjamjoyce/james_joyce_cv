@@ -176,10 +176,10 @@ with tab_intro:
 #########################################
 with tab_cv:
 
-    with open(os.path.join(downloadfile_path, 'James_Joyce_CV_24.2.pdf'), "rb") as pdf_file:
+    cv_path = os.path.join(downloadfile_path, 'James_Joyce_CV_24.2.pdf')
+    with open(cv_path, "rb") as pdf_file:
         cv = pdf_file.read()
-      
-    # cv = os.path.join(downloadfile_path, 'James_Joyce_CV_24.2.pdf')
+    
     st.download_button(label='Export CV',
                        data=cv,
                        file_name='James_Joyce_CV_24.2.pdf',

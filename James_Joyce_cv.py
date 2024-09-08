@@ -194,7 +194,7 @@ with tab_cv:
                  <br>
                  **Freelance Graphic Design & Marketing**''',
                  '''<div style='text-align: justify;'>
-                 - Managed website content on WordPress, creating new promotional pages.
+                 - Managing website content on WordPress, creating new promotional pages.
                  <br>
                  - Created newsletters in collaboration with Creative Director and Business Development Manager.
                  <br>
@@ -215,7 +215,7 @@ with tab_cv:
                  <br>
                  **Bar Management & Operations**''',
                  '''<div style='text-align: justify;'>
-                 - Managed bar operations at various high-profile events including music festivals and Formula 1.
+                 - Managing bar operations at various high-profile events including music festivals and Formula 1.
                  <br>
                  - Supervised night shifts at Field Maneuvers Festival, overseeing 4 bars, 4 managers, and 40 staff,
                  generating six-figure revenue.
@@ -251,7 +251,7 @@ with tab_cv:
         st.write('''**NATURAL HISTORY MUSEUM | London**
                  <br>
                  **Art Installation**
-                 '<div style='text-align: justify;'>
+                 <div style='text-align: justify;'>
                  - Contracted to design, create, and install a Pledge Wall for the Museum’s annual NYE event,
                  which centered on the subject of the Environment.
                  <br>
@@ -291,7 +291,7 @@ with tab_cv:
         st.write('**NOV 2023**', unsafe_allow_html=True)
 
     with col2:
-        st.write('''**Koko Camden | London**
+        st.write('''**KOKO CAMDEN | London**
                  <br>
                  **Artist Liaison**
                  <div style='text-align: justify;'>

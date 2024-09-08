@@ -183,11 +183,11 @@ with tab_cv:
     #                    mime='application/octet-stream')
     
     with open("yourpdf.pdf", "rb") as file:
-        btn=st.download_button(
-        label="Export CV",
-        data=cv,
-        file_name="James_Joyce_CV_24.2.pdf",
-        mime="application/octet-stream")
+      btn=st.download_button(
+      label="Export CV",
+      data=cv,
+      file_name="James_Joyce_CV_24.2.pdf",
+      mime="application/octet-stream")
 
     col1, col2, = st.columns([1.7,5],gap='small',vertical_alignment='top')
     with col1:

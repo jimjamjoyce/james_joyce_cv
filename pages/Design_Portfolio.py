@@ -79,7 +79,7 @@ st.markdown("""<style>.streamlit-expanderHeader {
 """,
     unsafe_allow_html=True,
 )
-st.image(os.path.join(image_path, 'JAMES-JOYCE-title.png'), use_column_width = True)
+st.image(os.path.join(image_path, 'JAMES-JOYCE-title.png'), use_container_width = True)
 st.write('''##### <span style="color:white"><div style="text-align: center;">DESIGN PORTFOLIO
             ''', unsafe_allow_html=True)
 tab_graphic, tab_physical, = st.tabs(["**GRAPHIC DESIGN**",

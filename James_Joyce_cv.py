@@ -87,7 +87,7 @@ st.markdown(
 ##  Title, Tabs, and Sidebar            ##
 ##########################################
 
-st.image(os.path.join(image_path, 'JAMES-JOYCE-title.png'), use_container_width = True)
+st.image(os.path.join(image_path, 'JAMES-JOYCE-title.png'))
 tab_intro, tab_cv, tab_personality, tab_contact = st.tabs(['**INTRO**',
                                                            '**WORK EXPERIENCE**',
                                                            '**PERSONALITY**',

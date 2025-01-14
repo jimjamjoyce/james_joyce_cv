@@ -176,7 +176,7 @@ with tab_intro:
 #########################################
 with tab_cv:
 
-    cv_path = os.path.join(downloadfile_path, 'James_Joyce_CV_24.2.pdf')
+    cv_path = os.path.join(downloadfile_path, 'James_Joyce_CV_24_DESIGN.pdf')
     with open(cv_path, "rb") as pdf_file:
         cv = pdf_file.read()
     

@@ -182,7 +182,7 @@ with tab_cv:
     
     st.download_button(label='Export CV',
                        data=cv,
-                       file_name='James_Joyce_CV_24.2.pdf',
+                       file_name='James_Joyce_CV_25.pdf',
                        mime='application/octet-stream')
 
     col1, col2, = st.columns([1.7,5],gap='small',vertical_alignment='top')
